@@ -13,7 +13,7 @@
       "}",
       "",
       "const ${TM_FILENAME_BASE/(^[a-z])|(-)([a-z])/${1:/upcase}${2:+ }${3:/upcase}/g}${1} = ({ className, children }: IProps): ReactElement => {",
-      "  return <div className={cn([className])}>{children}</div>;",
+      "  return <div className={cn(className)}>{children}</div>;",
       "};",
       "",
       "export default ${TM_FILENAME_BASE/(^[a-z])|(-)([a-z])/${1:/upcase}${2:+ }${3:/upcase}/g}${1};",
