@@ -10,4 +10,4 @@ This repository is a NextJS project template using TailwindCSS, ESLint & Prettie
 
 ## Snippets
 
-You have access to 3 default snippets in the `.vscode/snippets.code-snippets` file.
+You have access to 4 default snippets in the `.vscode/snippets.code-snippets` file.

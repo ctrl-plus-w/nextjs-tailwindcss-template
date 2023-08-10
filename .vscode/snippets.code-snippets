@@ -1,6 +1,6 @@
 {
-  "NextJS Element ": {
-    "prefix": ["nextel", "nextjs-element"],
+  "NextJS Element With Children": {
+    "prefix": ["nextelchild", "nextjs-element-children"],
     "body": [
       "import type { ReactElement, ReactNode } from 'react';",
       "",
@@ -14,6 +14,24 @@
       "",
       "const ${TM_FILENAME_BASE/(^[a-z])|(-)([a-z])/${1:/upcase}${2:+ }${3:/upcase}/g}${1} = ({ className, children }: IProps): ReactElement => {",
       "  return <div className={cn(className)}>{children}</div>;",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE/(^[a-z])|(-)([a-z])/${1:/upcase}${2:+ }${3:/upcase}/g}${1};",
+    ],
+  },
+  "NextJS Element ": {
+    "prefix": ["nextel", "nextjs-element"],
+    "body": [
+      "import type { ReactElement } from 'react';",
+      "",
+      "import { cn } from '@/util/style.util';",
+      "",
+      "interface IProps {",
+      "  className?: string;",
+      "}",
+      "",
+      "const ${TM_FILENAME_BASE/(^[a-z])|(-)([a-z])/${1:/upcase}${2:+ }${3:/upcase}/g}${1} = ({ className }: IProps): ReactElement => {",
+      "  return <div className={cn(className)}>${2}</div>;",
       "};",
       "",
       "export default ${TM_FILENAME_BASE/(^[a-z])|(-)([a-z])/${1:/upcase}${2:+ }${3:/upcase}/g}${1};",
